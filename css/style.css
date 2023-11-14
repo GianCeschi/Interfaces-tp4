@@ -1,16 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    /*background-color:#5499F8;*/
+}
 
 .seccion-imagenes-con-texto{
     display: flex;
 }
 
-.container{
-    width: 1080px;
+.elastico{
+    width: 100%;
 }
 
+.fijo{
+    width: 1080px;
+    margin: auto;
+}
+
+.edificios{
+    display: flex;
+}
+
+.spidermansPortada{
+    display: flex;
+}
+
+.spidermansRecuadros{
+    display: flex;
+    justify-content: space-evenly; /*Modificar*/
+}
+
+.spidermansRecuadrosTexto{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.vengadores{
+    display: flex;
+}
+
+.spidermansRecuadrosTexto div p{
+    width: 333px;
+height: 218px;
+flex-shrink: 0;
+color: #000;
+
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.telarañas{
+    display: flex;
+
+}
+
+.rectanguloVioleta{
+    position: relative;
+}
+
+.recVioletaContenido{
+    display: flex;
+}
+
+/*ACA JUNTAMOS TITULO, PARRAFO E IMAGEN EDIFICIO*/
+.imgEdificioYTexto{
+    display: flex;
+    flex-direction: column;
+}
 
 .contenedorParrafoYBoton{
     background-color: black;
-    width: 1280px;
+    
 }
 
 .contenedorParrafoYBoton p{
@@ -20,8 +87,8 @@ font-size: 60px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-padding-left: 104px;
-padding-right: 360px;
+padding-left: 8.1%;
+padding-right: 28.1%;
 }
 
 .contenedorParrafoYBoton button{
@@ -32,7 +99,7 @@ width: 292px;
 height: 50px;
 
 /* Drop Shadow */
-box-shadow: 4px 5px 0px 0px #02187E;
+box-shadow: 0.31% 0.39% 0% 0% #02187E;
 
 /* Tipografia*/
 color: #02187E;
@@ -61,29 +128,27 @@ margin-bottom: 50px;
 
 
 .lineaSuperiorFooter{
-    width: 1280px;
     height: 80px;
     background-color: #242424;
 }
 
 .lineaSuperiorFooter div{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 7.8%;
+    padding-right: 7.8%;
 }
 
 .footerFondoGris{
-    width: 1280px;
     height: 598px;
     background-color: #5E5E5D;
 }
 
 .textoFooter{
-    width: 820px;
+    width: 64%;
     height: 361px;
-    padding-left: 100px;
-    padding-top: 38px;
-    padding-right: 360px;
-    padding-bottom: 199px;
+    padding-left: 7.8%;
+    padding-top: 2.9%;
+    padding-right: 28.1%;
+    padding-bottom: 15.5%;
 }
 
 .textoFooter .p1{
@@ -108,6 +173,6 @@ letter-spacing: 2.2px;
 }
 
 .textoFooter div{
-    padding-top: 38px;
+    padding-top: 2.9%;
    
 }
