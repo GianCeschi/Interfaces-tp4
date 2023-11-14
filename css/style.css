@@ -67,12 +67,34 @@ line-height: normal;
 
 .recVioletaContenido{
     display: flex;
+    position: absolute;
+    top: 3500px;
+    left: 450px;
+}
+
+.duendeCalabaza{
+    position: absolute;
+    top: -300px; /*PREGUNTAR SI ESTA BIEN POSICIONAR EN NEGATIVO*/
+    left: 630px; 
 }
 
 /*ACA JUNTAMOS TITULO, PARRAFO E IMAGEN EDIFICIO*/
 .imgEdificioYTexto{
     display: flex;
     flex-direction: column;
+}
+
+.imgEdificioYTexto p{
+    width: 586px;
+    height: 154px;
+    flex-shrink: 0;
+    color: #FFF;
+
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .contenedorParrafoYBoton{
