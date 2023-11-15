@@ -12,21 +12,28 @@
 </head>
 
 <body>
-    <header>
-        <div class="fijo">
-            <img src="img/header.png" alt="header">
+    <header class="sticky">
+        <div class="menu sticky">
+            <div class="barritaMenu"></div>
+            <div class="barritaMenu"></div>
+            <div class="barritaMenu"></div>
         </div>
+
+        <div id="logo"><img src="img/logoPequeño.png" alt=""></div> <!--ESTE INDICO YO CON JS CUANDO QUIERO QUE APAREZCA-->
+
+        <div class="sticky"><button class="btnComprar">COMPRAR</button>
     </header>
 
-    <div class="fijo">
-        <img src="img/fondoConNubes.png" alt="fondoConNubes">
-    </div>
-
-    <div class="fijo">
+    <div class="logo sticky">
         <img src="img/logo.png" alt="logo">
     </div>
 
-    <div class="fijo edificios">
+    <div class="fondoNubes">
+        <img src="img/fondoConNubes.png" alt="fondoConNubes">
+    </div>
+
+    
+    <div class="edificios">
         <div>
             <img src="img/edifIzquierda.png" alt="edificioIzquierda">
         </div>
@@ -39,52 +46,63 @@
     </div>
 
     <div class="spidermansPortada elastico">
-        <div>
+        <div class="spideyBlanco">
             <img src="img/spidermanBlancoPortada.png" alt="spidermanBlancoPortada">
         </div>
-        <div>
+        <div class="spideyNormal">
             <img src="img/spidermanNormalPortada.png" alt="spidermanNormalPortada">
         </div>
-        <div>
+        <div class="spideyNegro">
             <img src="img/spidermanNegroPortada.png" alt="spidermanNegroPortada">
         </div>
+
     </div>
+    
     <div class="telarañas">
-        <img src="img/telaIzquierda.png" alt="telaIzquierda">
-    </div>
-    <div>
-        <img src="img/telaDerecha.png" alt="telaDerecha">
-    </div>
-
-    <div class="fijo rectanguloVioleta">
-        <img src="img/rectanguloVioleta.png" alt="rectanguloVioleta">
+        <div class="telaIzquierda">
+            <img src="img/telaIzquierda.png" alt="telaIzquierda">
+        </div>
+        <div class="telaDerecha">
+            <img src="img/telaDerecha.png" alt="telaDerecha">
+        </div>
     </div>
 
-    <div class="fijo recVioletaContenido">
-        <div class="imgEdificioYTexto">
-            <h2>Conoce a Spidey y sus sorprendentes amigos</h2>
-            <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para
-                formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
-                encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de
-                que un amigo de los Vengadores correrá para ayudar.</p>
 
 
-            <div>
-                <img src="img/juegoEdificioVerdeAtras.png" alt="juegoEdificioVerdeAtras">
+    <div class="elastico fondoContenedorDuendeVerde">
+        <!--PUEDO SACAR LA IMAGEN Y DEJAR EL COLOR DE FONDO, ENCONTRARLE LA FORMA DE DARLE LA CURVA-->
+        <div class="elastico rectanguloVioleta">
+            <img src="img/rectanguloVioleta.png" alt="rectanguloVioleta">
+        </div>
+
+        <div class="fijo recVioletaContenido">
+            <div class="fijo imgEdificioYTexto">
+                <h2 class="fijo">Conoce a Spidey y sus sorprendentes amigos</h2>
+                <p class="fijo">Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y
+                    Miles Morales para
+                    formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
+                    encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad
+                    de
+                    que un amigo de los Vengadores correrá para ayudar.</p>
+
+
+                <div class="fijo">
+                    <img src="img/juegoEdificioVerdeAtras.png" alt="juegoEdificioVerdeAtras">
+                </div>
             </div>
-        </div>
-        <div class="duendeCalabaza">
-            <img src="img/duendeVerdeCalabaza.png" alt="duendeVerdeCalabaza">
-        </div>
+            <div class="fijo duendeCalabaza">
+                <img src="img/duendeVerdeCalabaza.png" alt="duendeVerdeCalabaza">
+            </div>
 
+        </div>
     </div>
-<!--
+    <!--
     <div>
         <img src="img/rectanguloBlancoArriba.png" alt="rectanguloBlancoArriba">
     </div>
 -->
     <!--ESTO SE TIENE QUE MANTENER FIJO-->
-    <div class="fijo">
+    <div class="fijo contenedorRecuadros">
         <div class="spidermansRecuadros">
             <div><img src="img/imagenCuadradaSpidermanNormal.png" alt=""></div>
             <div><img src="img/imagenCuadradaSpidermanNegro.png" alt=""></div>
@@ -95,7 +113,7 @@
             <div>
                 <p>Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una
                     araña
-                    radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran
+                    radiactiva, y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran
                     poder
                     conlleva una gran responsabilidad”.</p>
             </div>
@@ -113,27 +131,26 @@
             </div>
         </div>
     </div>
+    <div>
+        <div class="fijo rectanguloSpidermanBlanco">
+            <img src="img/rectanguloSpidermanBlanco.png" alt="rectanguloSpidermanBlanco">
+        </div>
 
-    <div class="fijo">
-        <img src="img/rectanguloSpidermanBlanco.png" alt="rectanguloSpidermanBlanco">
+        <!--IMAGENES DE RUTAS QUE VAN A IR SOBRE EL SPIDERMAN BLANCO-->
+        <div>
+            <div class="ruta1"><img src="img/ruta1.png" alt=""></div>
+            <div class="ruta2"><img src="img/ruta2.png" alt=""></div>
+            <div class="ruta3"><img src="img/ruta3.png" alt=""></div>
+        </div>
     </div>
 
-    <!--IMAGENES DE RUTAS QUE VAN A IR SOBRE EL SPIDERMAN BLANCO-->
-    <div>
-    <div><img src="img/ruta1.png" alt=""></div>
-    <div><img src="img/ruta2.png" alt=""></div>
-    <div><img src="img/ruta3.png" alt=""></div>
-</div>
-    <div>
-        <img src="" alt="aca va el rectangulo negro">
+    <div class="elastico fondoContenedorVengadores">
+        <div class="fijo contenedorVengadores">
+            <h2 class="tituloVengadores">Los vengadores acompañando tu aventura</h2>
+            <div><img src="img/arbolesVengadores.png" alt=""></div>
+            <div><img src="img/nubesVengadores.png" alt=""></div>
+        </div>
     </div>
-
-    <div>
-        <h2>Los vengadores acompañando tu aventura</h2>
-        <div><img src="img/arbolesVengadores.png" alt=""></div>
-        <div><img src="img/nubesVengadores.png" alt=""></div>
-    </div>
-
     <div class="vengadores">
         <div><img src="img/elastica.png" alt=""></div>
         <div><img src="img/pumaNegro.png" alt=""></div>
@@ -147,7 +164,7 @@
         <!-- PONER LAS IMAGENES ARRIBA DEL RECTANGULO BLANCO!-->
         <h2>Mas amigos, mas diversion!</h2>
         <div class="seccion-imagenes-con-texto">
-            <div >
+            <div>
                 <div>
                     <img src="img/imagenConTexto1.png" alt="imagenConTexto1">
                 </div>
@@ -218,9 +235,11 @@
             </div>
         </div>
     </div>
-    <div class="elastico contenedorParrafoYBoton">
-        <p>”un gran poder conlleva una gran responsabilidad”</p>
-        <button>COMPRAR AHORA</button>
+    <div class="elastico fondoContenedorParrafoYBoton">
+        <div class="fijo contenedorParrafoYBoton">
+            <p>”un gran poder conlleva una gran responsabilidad”</p>
+            <button>COMPRAR AHORA</button>
+        </div>
     </div>
     <!--ACA COLOCO LOS 3 SPIDERMANS DENTRO DE RECTANGULO BLANCO-->
     <div class="contenedorSpidermans">
@@ -251,15 +270,15 @@
     <footer class="elastico">
 
         <div class="elastico lineaSuperiorFooter">
-            <div class="elastico">
+            <div class="fijo">
                 <img src="img/publicidadSobreLineaSuperiorFooter.png" alt="publicidadSobreLineaSuperiorFooter">
             </div>
         </div>
 
         <!-- El fondo gris no es necesario ponerle la imagen, le pongo el color de fondo y es mas facil para ubicar el parrafo y las redes-->
-        <div class="footerFondoGris">
-            <div class="textoFooter">
-                <p class="p1">©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark
+        <div class="elastico footerFondoGris">
+            <div class="fijo textoFooter">
+                <p class="fijo p1">©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark
                     Office. SEGA, the
                     SEGA logo and SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA
                     CORPORATION or
@@ -278,9 +297,9 @@
                     countries.The ESRB rating icons are registered trademarks of the Entertainment Software
                     Association.
                 </p>
-                <p class="p2"> COOKIE POLICY PRIVACY POLICY</p>
+                <p class="fijo p2"> COOKIE POLICY PRIVACY POLICY</p>
 
-                <div>
+                <div class="fijo">
                     <img src="img/redesFooter.png" alt="redesFooter">
                 </div>
             </div>
@@ -289,6 +308,7 @@
         </div>
 
     </footer>
+    <script src="js/js.js"></script>
 </body>
 
 </html>

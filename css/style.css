@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,135 +7,356 @@
     /*background-color:#5499F8;*/
 }
 
-.seccion-imagenes-con-texto{
+.seccion-imagenes-con-texto {
     display: flex;
 }
 
-.elastico{
+.elastico {
     width: 100%;
 }
 
-.fijo{
+.fijo {
     width: 1080px;
     margin: auto;
+    position: relative;
+    /*PARA PODER COLOCAR IMAGENES SOBRE LOS CONTENEDORES*/
 }
 
-.edificios{
+/*HEADER*/
+
+header {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #5499F9;
+    z-index: 8;
 }
 
-.spidermansPortada{
+/*HICE LA BARRITA A MANO*/
+.menu {
     display: flex;
-}
-
-.spidermansRecuadros{
-    display: flex;
-    justify-content: space-evenly; /*Modificar*/
-}
-
-.spidermansRecuadrosTexto{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.vengadores{
-    display: flex;
-}
-
-.spidermansRecuadrosTexto div p{
-    width: 333px;
-height: 218px;
-flex-shrink: 0;
-color: #000;
-
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.telarañas{
-    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 8%;
+    padding: 0px;
+    border: 0px;
 
 }
 
-.rectanguloVioleta{
+.barritaMenu {
+    height: 4px;
+    width: 34px;
+    background-color: #FFE901;
+    border: 4px solid #2981FF;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px 0px #02187E;
+}
+
+.btnComprar {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 111px;
+    border: 8px solid #2982FF;
+    background: #FFE901;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+    margin: 0px 100px 0px 0px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    /*DONDE LO VOY A PEGAR, OSEA DESDE EL INICIO*/
+}
+
+.logo {
+    width: 590px;
+    left: 550px;
+    background-color: transparent;
+    z-index: 9;
+    /*EL LOGO TIENE MAYOR Z-INDEX PORQUE SIEMPRE TIENE QUE ESTAR ARRIBA*/
+    position: absolute;
+    /*PARA COLOCARLO ARRIBA DE LAS NUBES*/
+    top: 200px;
+    left: 600px;
+}
+
+/*HAGO QUE CUANDO SE HACE SCROLL Y SE VA EL LOGO GRANDE, APAREZCA EL LOGO PEQUEÑO PARA EL HEADER STICKY*/
+
+#logo {
+    opacity: 0;
+    /* La imagen no es visible inicialmente */
+    transition: opacity 0.5s ease;
+    /* Agrega una transición suave */
+}
+
+#logo.visible {
+    opacity: 1;
+    /* Hace visible la imagen cuando se añade la clase 'visible' */
+}
+
+
+.fondoNubes {
+    width: 100%;
     position: relative;
 }
 
-.recVioletaContenido{
-    display: flex;
-    position: absolute;
-    top: 3500px;
-    left: 450px;
+.fondoNubes img {
+    width: 100%;
+    height: 720px;
+    margin-top: 0px;
 }
 
-.duendeCalabaza{
+.edificios {
+    display: flex;
+    position: relative;
+    top: -600px;
+    justify-content: space-between;
+    align-items: baseline;
+    /*Los alineo*/
+    z-index: 1;
+}
+
+.spidermansPortada {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
     position: absolute;
-    top: -300px; /*PREGUNTAR SI ESTA BIEN POSICIONAR EN NEGATIVO*/
-    left: 630px; 
+}
+
+.spideyBlanco {
+    position: relative;
+    top: -1050px;
+    left: 50px;
+}
+
+.spideyNormal {
+    position: relative;
+    top: -1050px;
+    left: 10px;
+}
+
+.spideyNegro {
+    position: relative;
+    top: -1150px;
+    left: -140px;
+}
+
+.telarañas {
+    display: flex;
+    z-index: 3;
+    position: absolute;
+}
+
+.telaIzquierda {
+    position: relative;
+    top: -1070px;
+    left: 110px;
+}
+
+.telaDerecha {
+    position: relative;
+    top: -1090px;
+    left: 555px;
+}
+
+
+.vengadores {
+    display: flex;
+}
+
+.spidermansRecuadrosTexto div p {
+    width: 333px;
+    height: 218px;
+    flex-shrink: 0;
+    color: #000;
+
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/*CHEQUEAR COMO MANTENER FIJO ALGO CON POSICION ABSOLUTA*/
+.fondoContenedorDuendeVerde {
+    background-color: #8F6AA6;
+    position: relative;
+    top: -614px;
+    /*ESTE ES EL FONDO VIOLETA*/
+}
+
+.rectanguloVioleta {
+    position: relative;
+}
+
+.recVioletaContenido {
+    display: flex;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+
+.duendeCalabaza {
+    position: absolute;
+    top: -200px;
+    /*PREGUNTAR SI ESTA BIEN POSICIONAR EN NEGATIVO*/
+    left: 630px;
 }
 
 /*ACA JUNTAMOS TITULO, PARRAFO E IMAGEN EDIFICIO*/
-.imgEdificioYTexto{
+.imgEdificioYTexto {
     display: flex;
     flex-direction: column;
 }
 
-.imgEdificioYTexto p{
+.imgEdificioYTexto p {
     width: 586px;
     height: 154px;
     flex-shrink: 0;
     color: #FFF;
+    padding-top: 24px;
+    margin-left: 0px;
 
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.contenedorParrafoYBoton{
-    background-color: black;
+.imgEdificioYTexto h2 {
+    width: 646px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
+    margin-left: 0px;
+}
+
+/*RECUADROS SPIDERMANS*/
+
+.contenedorRecuadros {
+    height: 1085px;
+}
+
+.spidermansRecuadros {
+    display: flex;
+    justify-content: space-evenly;
+    /*Modificar*/
     
 }
 
-.contenedorParrafoYBoton p{
+.spidermansRecuadrosTexto {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*RUTAS*/
+
+.rectanguloSpidermanBlanco {
+    position: absolute;
+    top: 3100px;
+    left: 400px;
+}
+
+.ruta1 {
+    position: absolute;
+    top: 2950px;
+    left: 400px;
+}
+
+.ruta2 {
+    position: absolute;
+    top: 3070px;
+    left: 400px;
+}
+
+.ruta3 {
+    position: absolute;
+    top: 3240px;
+    left: 450px;
+}
+
+/*VENGADORES*/
+
+.fondoContenedorVengadores {
+    background-color: black;
+}
+
+.contenedorVengadores {
+    margin: 400px;
+}
+
+.tituloVengadores {
+    width: 667px;
+    padding-top: 200px;
+    padding-left: 104px;
     color: #FFF;
-font-family: Lato;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-left: 8.1%;
-padding-right: 28.1%;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
 }
 
-.contenedorParrafoYBoton button{
+/*EL CONTENEDOR ES ELASTICO LO DE ADENTRO ES FIJO*/
+.fondoContenedorParrafoYBoton {
+    background-color: black;
+}
+
+.contenedorParrafoYBoton p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8.1%;
+    padding-right: 28.1%;
+}
+
+.contenedorParrafoYBoton button {
     border-radius: 111px;
-border: 8px solid var(--2982-ff, #2982FF);
-background: #FFE901;
-width: 292px;
-height: 50px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    width: 292px;
+    height: 50px;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
 
-/* Drop Shadow */
-box-shadow: 0.31% 0.39% 0% 0% #02187E;
-
-/* Tipografia*/
-color: #02187E;
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 900;
-line-height: 94.5%; /* 18.9px */
-letter-spacing: 2.2px;
-margin-left: 110px;
-margin-bottom: 50px;
+    /* Tipografia*/
+    color: #02187E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+    margin-left: 110px;
+    margin-bottom: 50px;
 }
 
-.contenedorSpidermans{
+.contenedorSpidermans {
     position: relative;
 }
 
@@ -149,41 +370,42 @@ margin-bottom: 50px;
 }
 
 
-.lineaSuperiorFooter{
+.lineaSuperiorFooter {
     height: 80px;
     background-color: #242424;
 }
 
-.lineaSuperiorFooter div{
-    padding-left: 7.8%;
-    padding-right: 7.8%;
+.lineaSuperiorFooter div {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.footerFondoGris{
+.footerFondoGris {
     height: 598px;
     background-color: #5E5E5D;
 }
 
-.textoFooter{
-    width: 64%;
+.textoFooter {
+    width: 820px;
     height: 361px;
-    padding-left: 7.8%;
-    padding-top: 2.9%;
-    padding-right: 28.1%;
-    padding-bottom: 15.5%;
+    padding-left: 100px;
+    padding-top: 38px;
+    padding-right: 360px;
+    padding-bottom: 199px;
 }
 
-.textoFooter .p1{
+.textoFooter .p1 {
     color: #FFF;
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 94.5%; /* 18.9px */
-letter-spacing: 2.2px;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
 }
 
-.textoFooter .p2{
+.textoFooter .p2 {
     color: #FFF;
     font-family: Lato;
     font-size: 20px;
@@ -192,9 +414,10 @@ letter-spacing: 2.2px;
     line-height: 94.5%;
     letter-spacing: 2.2px;
     text-decoration-line: underline;
+    margin-top: 0px;
 }
 
-.textoFooter div{
-    padding-top: 2.9%;
-   
+.textoFooter div {
+    padding-top: 38px;
+
 }
