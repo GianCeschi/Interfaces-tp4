@@ -7,12 +7,10 @@
     /*background-color:#5499F8;*/
 }
 
-.seccion-imagenes-con-texto {
-    display: flex;
-}
 
 .elastico {
     width: 100%;
+    display: block; /*para que cubra todo el ancho de la pantalla*/
 }
 
 .fijo {
@@ -83,14 +81,13 @@ header {
 
 .logo {
     width: 590px;
-    left: 550px;
     background-color: transparent;
     z-index: 9;
     /*EL LOGO TIENE MAYOR Z-INDEX PORQUE SIEMPRE TIENE QUE ESTAR ARRIBA*/
     position: absolute;
     /*PARA COLOCARLO ARRIBA DE LAS NUBES*/
-    top: 200px;
-    left: 600px;
+    top: 100px;
+    left: 30%;
 }
 
 /*HAGO QUE CUANDO SE HACE SCROLL Y SE VA EL LOGO GRANDE, APAREZCA EL LOGO PEQUEÑO PARA EL HEADER STICKY*/
@@ -115,19 +112,21 @@ header {
 
 .fondoNubes img {
     width: 100%;
-    height: 720px;
+    height: 720px;  /*LE DEJAMOS SU ALTURA ORIGINAL*/
     margin-top: 0px;
 }
 
 .edificios {
     display: flex;
     position: relative;
-    top: -600px;
-    justify-content: space-between;
+    top: -620px;
+    justify-content: space-between; /*tengo que lograr que ocupe toda la pantalla el*/
     align-items: baseline;
     /*Los alineo*/
     z-index: 1;
+   
 }
+
 
 .spidermansPortada {
     display: flex;
@@ -138,19 +137,19 @@ header {
 
 .spideyBlanco {
     position: relative;
-    top: -1050px;
+    top: -1150px;
     left: 50px;
 }
 
 .spideyNormal {
     position: relative;
-    top: -1050px;
+    top: -1150px;
     left: 10px;
 }
 
 .spideyNegro {
     position: relative;
-    top: -1150px;
+    top: -1250px;
     left: -140px;
 }
 
@@ -162,16 +161,23 @@ header {
 
 .telaIzquierda {
     position: relative;
-    top: -1070px;
-    left: 110px;
+    top: -1340px;
+    left: -225px;
 }
 
 .telaDerecha {
     position: relative;
-    top: -1090px;
+    top: -1300px;
     left: 555px;
 }
 
+.telaDerecha img{
+    width: 150%;
+}
+
+.telaIzquierda img{
+    width: 150%;
+}
 
 .vengadores {
     display: flex;
@@ -192,29 +198,41 @@ header {
 
 
 /*CHEQUEAR COMO MANTENER FIJO ALGO CON POSICION ABSOLUTA*/
-.fondoContenedorDuendeVerde {
-    background-color: #8F6AA6;
-    position: relative;
-    top: -614px;
-    /*ESTE ES EL FONDO VIOLETA*/
-}
+
 
 .rectanguloVioleta {
     position: relative;
+    top: -700px;
+    z-index: 1;
+}
+
+.rectanguloVioleta img{
+    width: 100%;
+    height: 844px;
 }
 
 .recVioletaContenido {
     display: flex;
     position: absolute;
-    top: 400px;
-    left: 400px;
+    top: 19.3%;
+    left: 15.6%;
+}
+.edifVerde img{
+    width: auto;
+    height: auto;
 }
 
 .duendeCalabaza {
     position: absolute;
-    top: -200px;
+    top: 20px;
     /*PREGUNTAR SI ESTA BIEN POSICIONAR EN NEGATIVO*/
     left: 630px;
+}
+
+/*HAGO ESTO PORQUE SINO SE AGRANDA DEMASIADO*/
+.duendeCalabaza img{
+    width: auto;
+    height: auto;
 }
 
 /*ACA JUNTAMOS TITULO, PARRAFO E IMAGEN EDIFICIO*/
@@ -254,13 +272,18 @@ header {
 
 .contenedorRecuadros {
     height: 1085px;
+    margin-top: -400px;
 }
 
 .spidermansRecuadros {
     display: flex;
     justify-content: space-evenly;
     /*Modificar*/
-    
+
+}
+.spidermansRecuadros img{
+    width: auto;
+    height: auto;
 }
 
 .spidermansRecuadrosTexto {
@@ -271,29 +294,37 @@ header {
 
 /*RUTAS*/
 
+.rectanguloSpidermanBlanco img{
+  width: 100%;
+  height: 566px; /*Tuve que ponerle el tamaño exacto a la img*/
+   margin: -200px; /*DUDA QUEDO AHI PORQUE SE DIO*/
+}
+
 .rectanguloSpidermanBlanco {
     position: absolute;
-    top: 3100px;
-    left: 400px;
+    top: 2800px;
+    left: 200px;
+    display: block;
 }
 
 .ruta1 {
     position: absolute;
-    top: 2950px;
-    left: 400px;
+    top: 2450px;
+    left: 150px;
 }
 
 .ruta2 {
     position: absolute;
-    top: 3070px;
-    left: 400px;
+    top: 2580px;
+    left: 135px;
 }
 
 .ruta3 {
     position: absolute;
-    top: 3240px;
-    left: 450px;
+    top: 2770px;
+    left: 170px;
 }
+
 
 /*VENGADORES*/
 
@@ -302,22 +333,79 @@ header {
 }
 
 .contenedorVengadores {
-    margin: 400px;
+    margin: -100px;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .tituloVengadores {
     width: 667px;
     padding-top: 200px;
-    padding-left: 104px;
+    padding-left: 304px;
     color: #FFF;
     font-family: Lato;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
     line-height: 94.5%;
+    margin-top: 150px;
     /* 56.7px */
 }
 
+.nubesVengadores{
+    z-index: 3;
+    margin-top: 50px;
+    margin-left: -150px;  /*250px funciona en pantalla al 100%*/
+}
+
+.hojasVengadores{
+    z-index: 7;
+    position: absolute;
+    bottom: 0px;  /*PARA QUE QUEDE EN LA ALTURA DEL INICIO*/
+    left: 595px;
+    margin-top: 50px;
+    margin-left: -150px;
+}
+
+.arbolesVengadores{
+    z-index: 4;
+    position: absolute;
+    top: 518px;
+    left: 595px;
+    margin-top: 50px;
+    margin-left: -150px;
+}
+
+.mujerElastica{
+    position: absolute;
+    top: 3470px;
+    left: 390px;
+    z-index: 6;
+}
+
+.pumaNegro{
+    position: absolute;
+    z-index: 6;
+    top: 3300px;
+    left: 800px;
+}
+
+.hulk{
+    position: absolute;
+    z-index: 6;
+    top: 3660px;
+    left: 1020px;
+}
+
+
+.tituloSeccionImgConTexto{
+    padding-top: 100px;
+}
 /*EL CONTENEDOR ES ELASTICO LO DE ADENTRO ES FIJO*/
 .fondoContenedorParrafoYBoton {
     background-color: black;
@@ -356,6 +444,50 @@ header {
     margin-bottom: 50px;
 }
 
+/*IMAGENES CON TEXTO*/
+
+.seccion-imagenes-con-texto {
+    display: flex;
+}
+
+/*titulo mas amigos, mas diversion*/
+.fijo h2 {
+    width: 802px;
+    color: #000;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
+    margin: 50px;
+    margin-left: 0px;
+}
+
+.textoCambiante {
+    padding: 50px;
+}
+
+.textoCambiante h3 {
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 37.8px */
+}
+
+.textoCambiante p {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 18.9px */
+}
+
 .contenedorSpidermans {
     position: relative;
 }
@@ -369,6 +501,138 @@ header {
     align-items: center;
 }
 
+.tituloCorreoElectronico {
+    width: 816px;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    /* 56.7px */
+    margin-left: 250px;
+}
+
+.contenedorBuscador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.buscadorIzquierda {
+    width: 562px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    background: #FFF;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    margin-right: 0px;
+}
+
+.buscadorDerecha {
+    width: 218px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px 0px #02187E;
+    color: #02187E;
+}
+
+.fijo .buscadorIzquierda p {
+    color: rgba(0, 0, 0, 0.39);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+    margin-top: 41px;
+    margin-right: 250px;
+}
+
+.buscadorDerecha P {
+    /*Tipografia*/
+    font-family: Lato;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 900;
+    line-height: 94.5%;
+    /* 18.9px */
+    letter-spacing: 2.2px;
+    text-align: center;
+    margin-top: 41px;
+}
+
+.fijo .parrafoCorreo {
+    width: 578px;
+    height: 95px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: start;
+    margin-left: 330px;
+}
+
+.fijo .parrafoCorreo p {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    /* 18.9px */
+}
+
+.fijo .parrafoCorreo span {
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    text-decoration-line: underline;
+}
+
+.fondoCieloInferior{
+    position: relative;
+}
+
+.fondoCieloInferior img{
+    width: 100%;
+    
+}
+
+ .suscripcion{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.fondoEdificiosInferior{
+    position: absolute;
+    top: 44.5%;
+    left: 0px; 
+    width: 100%;
+}
+
+.fondoEdificiosInferior img{
+    width: 100%;
+}
+
+.teen{
+    position: absolute;
+    top: 100%;
+    left: 31%;
+}
 
 .lineaSuperiorFooter {
     height: 80px;
@@ -414,7 +678,7 @@ header {
     line-height: 94.5%;
     letter-spacing: 2.2px;
     text-decoration-line: underline;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .textoFooter div {

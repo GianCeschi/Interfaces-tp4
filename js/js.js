@@ -1,6 +1,6 @@
 // Obtén el contenedor de la imagen y la posición donde debería aparecer
 let logo = document.getElementById('logo');
-let triggerHeight = 400; // Ajusto este valor para que aparezca el logo chiquito cuando yo quiero
+let triggerHeight = 300; // Ajusto este valor para que aparezca el logo chiquito cuando yo quiero
 
 // Agrega un evento de scroll
 window.addEventListener('scroll', function() {
