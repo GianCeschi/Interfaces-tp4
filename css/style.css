@@ -7,6 +7,10 @@
     /*background-color:#5499F8;*/
 }
 
+.container1280{
+    width: 1280px;
+    margin: auto;
+}
 
 .elastico {
     width: 100%;
@@ -119,69 +123,70 @@ header {
 .edificios {
     display: flex;
     position: relative;
-    top: -620px;
-    justify-content: space-between; /*tengo que lograr que ocupe toda la pantalla el*/
+    top: -420px;
+    justify-content:center;
     align-items: baseline;
     /*Los alineo*/
     z-index: 1;
    
 }
 
+.edificios img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .spidermansPortada {
     display: flex;
     justify-content: center;
     z-index: 2;
-    position: absolute;
+    position: relative;
 }
 
 .spideyBlanco {
     position: relative;
-    top: -1150px;
+    top: -870px;
     left: 50px;
 }
 
 .spideyNormal {
     position: relative;
-    top: -1150px;
+    top: -870px;
     left: 10px;
 }
 
 .spideyNegro {
     position: relative;
-    top: -1250px;
-    left: -140px;
+    top: -930px;
+    left: -150px;
 }
 
 .telarañas {
     display: flex;
     z-index: 3;
-    position: absolute;
+    position: absolute;    
 }
 
 .telaIzquierda {
     position: relative;
-    top: -1340px;
-    left: -225px;
+    top: -1367px;
+    left: -185px;
 }
 
 .telaDerecha {
     position: relative;
-    top: -1300px;
-    left: 555px;
+    top: -1350px;
+    left: 230px;
 }
 
-.telaDerecha img{
-    width: 150%;
+.telaIzquierda img,
+.telaDerecha img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.telaIzquierda img{
-    width: 150%;
-}
-
-.vengadores {
-    display: flex;
-}
 
 .spidermansRecuadrosTexto div p {
     width: 333px;
@@ -202,7 +207,7 @@ header {
 
 .rectanguloVioleta {
     position: relative;
-    top: -700px;
+    top: -960px;
     z-index: 1;
 }
 
@@ -214,8 +219,8 @@ header {
 .recVioletaContenido {
     display: flex;
     position: absolute;
-    top: 19.3%;
-    left: 15.6%;
+    top: 16%;
+    left: 8.6%;
 }
 .edifVerde img{
     width: auto;
@@ -272,7 +277,7 @@ header {
 
 .contenedorRecuadros {
     height: 1085px;
-    margin-top: -400px;
+    margin-top: -750px;
 }
 
 .spidermansRecuadros {
@@ -301,28 +306,28 @@ header {
 }
 
 .rectanguloSpidermanBlanco {
-    position: absolute;
-    top: 2800px;
+    position: relative;
+    top: -300px;
     left: 200px;
     display: block;
 }
 
 .ruta1 {
-    position: absolute;
-    top: 2450px;
-    left: 150px;
+    position: relative;
+    top:-820px;
+    left: 50px;
 }
 
 .ruta2 {
-    position: absolute;
-    top: 2580px;
-    left: 135px;
+    position: relative;
+    top: -1120px;
+    left: 40px;
 }
 
 .ruta3 {
-    position: absolute;
-    top: 2770px;
-    left: 170px;
+    position: relative;
+    top: -1470px;
+    left: 70px;
 }
 
 
@@ -330,23 +335,23 @@ header {
 
 .fondoContenedorVengadores {
     background-color: black;
+    margin-top:-1800px ;  
+    height: 1000px;
+    
+    /*TENGO QUE DARLE LA CURVA ABAJO*/ 
 }
 
 .contenedorVengadores {
-    margin: -100px;
-    position: relative;
-    height: auto;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .tituloVengadores {
     width: 667px;
-    padding-top: 200px;
-    padding-left: 304px;
+    padding-top: 150px;
     color: #FFF;
     font-family: Lato;
     font-size: 60px;
@@ -359,57 +364,89 @@ header {
 
 .nubesVengadores{
     z-index: 3;
-    margin-top: 50px;
-    margin-left: -150px;  /*250px funciona en pantalla al 100%*/
+    position: relative;
+    margin-top: 100px;
 }
 
 .hojasVengadores{
     z-index: 7;
-    position: absolute;
-    bottom: 0px;  /*PARA QUE QUEDE EN LA ALTURA DEL INICIO*/
-    left: 595px;
-    margin-top: 50px;
-    margin-left: -150px;
+    position: relative;
+    top: -531px;
+   
 }
 
 .arbolesVengadores{
     z-index: 4;
-    position: absolute;
-    top: 518px;
-    left: 595px;
-    margin-top: 50px;
-    margin-left: -150px;
+    position: relative;
+    top: -1050px;
+    margin-top: -13px;
+}
+
+.vengadores {
+    display: flex;
+    position: relative;
 }
 
 .mujerElastica{
     position: absolute;
-    top: 3470px;
-    left: 390px;
+    top: -530px;
+    left: 130px;
     z-index: 6;
 }
 
 .pumaNegro{
     position: absolute;
     z-index: 6;
-    top: 3300px;
-    left: 800px;
+    top: -684px;
+    left: 550px;
 }
 
 .hulk{
     position: absolute;
     z-index: 6;
-    top: 3660px;
-    left: 1020px;
+    top: -327px;
+    left: 775px;
+}
+
+.contenedorTextoCambiante{
+margin-bottom: 200px;
 }
 
 
 .tituloSeccionImgConTexto{
     padding-top: 100px;
 }
+
+.separador2{
+    position: relative;
+    top: -20px;
+    left: -100px;
+    width: 1280px;
+    height: 150px;
+    background: #000000;
+    z-index: 0;
+    transform: skewY(5deg);
+    transform-origin: top right;
+}
+
+.separador3{
+    position: relative;
+    top:120px;
+    left:0;
+    margin-left: -100px;
+    width: 1280px;
+    height: 120px;
+    background: #000000;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+}
+
+
 /*EL CONTENEDOR ES ELASTICO LO DE ADENTRO ES FIJO*/
 .fondoContenedorParrafoYBoton {
     background-color: black;
 }
+
 
 .contenedorParrafoYBoton p {
     color: #FFF;
@@ -420,6 +457,7 @@ header {
     line-height: normal;
     padding-left: 8.1%;
     padding-right: 28.1%;
+    margin-top: -90px;
 }
 
 .contenedorParrafoYBoton button {
@@ -441,14 +479,28 @@ header {
     /* 18.9px */
     letter-spacing: 2.2px;
     margin-left: 110px;
-    margin-bottom: 50px;
+    margin-top: 40px;
 }
+
 
 /*IMAGENES CON TEXTO*/
 
 .seccion-imagenes-con-texto {
     display: flex;
+    padding-top: 00px;
 }
+
+.seccion-img img{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textoCambiante p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
 
 /*titulo mas amigos, mas diversion*/
 .fijo h2 {
@@ -493,9 +545,9 @@ header {
 }
 
 .los3Spidermans {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 50px;
     display: flex;
     padding-left: 190px;
     align-items: center;
@@ -613,8 +665,7 @@ header {
 
  .suscripcion{
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top: 8%;
 }
 
 .fondoEdificiosInferior{
