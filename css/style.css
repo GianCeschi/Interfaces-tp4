@@ -10,6 +10,7 @@
 .container1280{
     width: 1280px;
     margin: auto;
+    overflow: hidden;
 }
 
 .elastico {
@@ -27,7 +28,8 @@
 /*HEADER*/
 
 header {
-    width: 100%;
+    width: 1280px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,7 +117,7 @@ header {
     transform: scale(0.3); /* Cambia el valor según lo que desees, 0.5 es solo un ejemplo */
     transform-origin: top left; /* Ajusta el origen de la transformación según tus necesidades */
     top: 0px;
-    left: 40%;
+    left: 45%;
 }
 
 
@@ -175,7 +177,7 @@ header {
 .telarañas {
     display: flex;
     z-index: 3;
-    position: absolute;    
+    position: relative;    
 }
 
 .telaIzquierda {
@@ -217,7 +219,7 @@ header {
 
 .rectanguloVioleta {
     position: relative;
-    top: -960px;
+    top: -1630px;
     z-index: 1;
 }
 
@@ -287,7 +289,7 @@ header {
 
 .contenedorRecuadros {
     height: 1085px;
-    margin-top: -750px;
+    margin-top: -1400px;
 }
 
 .spidermansRecuadros {
