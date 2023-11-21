@@ -198,6 +198,12 @@ header {
     height: auto;
     display: block;
 }
+/*PARA EL EFECTO PARALLAX DE LA PORTADA CON LOS SPIDEYS*/
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
 
 .spidermansRecuadrosTexto div p {
@@ -219,7 +225,7 @@ header {
 
 .rectanguloVioleta {
     position: relative;
-    top: -1630px;
+    top: -1650px;
     z-index: 1;
 }
 
