@@ -27,6 +27,12 @@
 
 /*HEADER*/
 
+.contenedorHeader{
+    width: 100%;
+    background-color: #5499F9;
+    z-index: 50;
+}
+
 header {
     width: 1280px;
     margin: auto;
@@ -104,7 +110,7 @@ header {
 
 .logo {
     background-color: transparent;
-    z-index: 9;
+    z-index: 51;
     /*EL LOGO TIENE MAYOR Z-INDEX PORQUE SIEMPRE TIENE QUE ESTAR ARRIBA*/
     position: absolute;
     /*PARA COLOCARLO ARRIBA DE LAS NUBES*/
@@ -219,10 +225,6 @@ header {
     line-height: normal;
 }
 
-
-/*CHEQUEAR COMO MANTENER FIJO ALGO CON POSICION ABSOLUTA*/
-
-
 .rectanguloVioleta {
     position: relative;
     top: -1650px;
@@ -279,7 +281,7 @@ header {
     line-height: normal;
 }
 
-.imgEdificioYTexto h2 {
+.fijo .imgEdificioYTexto h2 {
     width: 646px;
     color: #FFF;
     font-family: Lato;

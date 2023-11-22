@@ -17,6 +17,18 @@ window.addEventListener('scroll', function() {
   }
 });
 
+//Movimiento mas lento que la velocidad del scroll del duende verde
+
+window.addEventListener('scroll', function () {
+  // Calcula la posición de desplazamiento
+  var scrollPosition = window.scrollY;
+
+  // Ajusta la posición del duende verde
+  var duendeCalabaza = document.querySelector('.duendeCalabaza');
+  duendeCalabaza.style.top = 20 + 0.05 * scrollPosition - 70 + 'px';  /* El 0.05 varia la velocidad del duende*/ 
+});
+
+
  // Función para manejar el efecto parallax
  function parallax() {
   var scrolled = window.scrollY;
