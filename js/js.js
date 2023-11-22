@@ -94,3 +94,40 @@ window.addEventListener('scroll', function () {
   parallax();
   animateOnScroll();
 });
+
+
+/* Efecto fade in de las 3 cards */
+
+//ESTO ES PARA LAS CARDS
+document.addEventListener('scroll', function() {
+  var spidermansRecuadros = document.querySelector('.spidermansRecuadros');
+  var position = spidermansRecuadros.getBoundingClientRect();
+
+   // Verificar si la sección está completamente visible en la pantalla
+   if (position.top >= 0 && position.bottom <= window.innerHeight) {
+    // Verificar si la clase 'visible' ya está presente
+    if (!spidermansRecuadros.classList.contains('visible')) {
+        spidermansRecuadros.classList.add('visible');
+    }
+} else {
+    // Si la sección ya no es visible, quitar la clase 'visible'
+    spidermansRecuadros.classList.remove('visible');
+}
+});
+
+//ESTO ES PARA EL TEXTO DE CADA
+document.addEventListener('scroll', function() {
+  var spidermansRecuadrosTexto = document.querySelector('.spidermansRecuadrosTexto');
+  var position = spidermansRecuadrosTexto.getBoundingClientRect();
+
+     // Verificar si la sección está completamente visible en la pantalla
+   if (position.top >= 0 && position.bottom <= window.innerHeight) {
+    // Verificar si la clase 'visible' ya está presente
+    if (!spidermansRecuadrosTexto.classList.contains('visible')) {
+        spidermansRecuadrosTexto.classList.add('visible');
+    }
+} else {
+    // Si la sección ya no es visible, quitar la clase 'visible'
+    spidermansRecuadrosTexto.classList.remove('visible');
+}
+});

@@ -100,6 +100,12 @@ header {
     letter-spacing: 2.2px;
     margin: 0px 100px 0px 0px;
     -webkit-text-stroke:2px;
+    cursor: pointer;
+}
+
+.btnComprar:hover{
+    color: #2981FF;
+    background-color: #dfd956;
 }
 
 .sticky {
@@ -300,21 +306,39 @@ header {
     margin-top: -1400px;
 }
 
+/*ESTAS SON LAS IMAGENES DE LAS CARDS*/
 .spidermansRecuadros {
     display: flex;
     justify-content: space-evenly;
-    /*Modificar*/
-
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+.spidermansRecuadros.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .spidermansRecuadros img{
     width: auto;
     height: auto;
 }
 
+/*ESTOS SON LOS TEXTOS DE LA CARD*/
 .spidermansRecuadrosTexto {
     display: flex;
     justify-content: space-evenly;
+    padding: 10px;
+    padding-left: 30px; ;
+    opacity: 0; /* Establecer la opacidad inicial en 0 */
+    transform: translateY(30px); /* Mover los elementos hacia abajo */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Aplicar transición suave */
+}
 
+.spidermansRecuadrosTexto.visible {
+    opacity: 1; /* Hacer visible el contenido cuando la clase 'visible' está presente */
+    transform: translateY(0); /* Devolver los elementos a su posición original */
 }
 
 /*RUTAS*/
@@ -501,6 +525,12 @@ margin-bottom: 200px;
     margin-left: 110px;
     margin-top: 40px;
     -webkit-text-stroke:2px;
+    cursor: pointer;
+}
+
+.contenedorParrafoYBoton button:hover{
+    color: #2981FF;
+    background-color: #dfd956;
 }
 
 
@@ -617,6 +647,13 @@ margin-bottom: 200px;
     /* Drop Shadow */
     box-shadow: 4px 5px 0px 0px #02187E;
     color: #02187E;
+    cursor: pointer;
+    -webkit-text-stroke:2px;
+}
+
+.buscadorDerecha:hover{
+    color: #2981FF;
+    background-color: #dfd956;
 }
 
 .fijo .buscadorIzquierda p {
