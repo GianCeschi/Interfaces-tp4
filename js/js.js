@@ -131,3 +131,21 @@ document.addEventListener('scroll', function() {
     spidermansRecuadrosTexto.classList.remove('visible');
 }
 });
+
+
+/*Movimiento de rutas */
+
+window.addEventListener('scroll', function () {
+  // Calcula la posición de desplazamiento
+  var scrollPosition = window.scrollY;
+
+
+  var ruta1 = document.querySelector('.ruta1');
+  ruta1.style.top = 20 + 0.05 * scrollPosition -920 + 'px';  /* El 0.05 varia la velocidad de la ruta1*/
+
+  var ruta2 = document.querySelector('.ruta2');
+  ruta2.style.top = 20 + 0.05 * scrollPosition -1230 + 'px';  /* El 0.05 varia la velocidad de la ruta2*/
+  // Ajusta la posición del duende verde
+  var ruta3 = document.querySelector('.ruta3');
+  ruta3.style.top = 20 + 0.05 * scrollPosition -1580 + 'px';  /* El 0.05 varia la velocidad de la ruta3*/ 
+});

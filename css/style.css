@@ -105,7 +105,7 @@
       content: "...";
   
       opacity: 1;
-    }
+   }
   }
 
 /*HEADER*/
@@ -434,30 +434,48 @@ header {
 
 .rectanguloSpidermanBlanco {
     position: relative;
-    top: -300px;
+    top: -250px;
     left: 200px;
     display: block;
 }
 
 .ruta1 {
     position: relative;
-    top:-820px;
+    top:-770px;
     left: 50px;
+    width: 20px;
+    transition: transform 0.5s ease; /* Se ajusta la duración de la transición aquí */
+}
+
+.ruta1:hover{
+    transform: skew(5deg, 0) translateX(20px);
+    cursor: pointer;
 }
 
 .ruta2 {
     position: relative;
-    top: -1120px;
+    top: -1070px;
     left: 40px;
+    width: 5px;
+    transition: transform 0.5s ease  0.1s; /* Se agrega un retraso de 0.1s */
+}
+
+.ruta2:hover{
+    transform: skew(5deg, 0) translateX(20px);
+    cursor: pointer;
 }
 
 .ruta3 {
     position: relative;
-    top: -1470px;
+    top: -1420px;
     left: 70px;
+    width: 5px;
+    transition: transform 0.5s ease  0.2s; /* Se agrega un retraso de 0.2s */
 }
-
-
+.ruta3:hover{
+    transform: skew(5deg, 0) translateX(20px);
+    cursor: pointer;
+}
 /*VENGADORES*/
 
 .fondoContenedorVengadores {
@@ -478,7 +496,7 @@ header {
 
 .tituloVengadores {
     width: 667px;
-    padding-top: 150px;
+    padding-top: 170px;
     color: #FFF;
     font-family: Lato;
     font-size: 60px;
