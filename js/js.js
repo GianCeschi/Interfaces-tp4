@@ -149,3 +149,72 @@ window.addEventListener('scroll', function () {
   var ruta3 = document.querySelector('.ruta3');
   ruta3.style.top = 20 + 0.05 * scrollPosition -1580 + 'px';  /* El 0.05 varia la velocidad de la ruta3*/ 
 });
+
+/*ESTO ES PARA QUE VAYAN APARECIENDO LAS IMAGENES */
+
+let img1 =  document.querySelector("#imagen1");
+let img2 =  document.querySelector("#imagen2");
+let img3 =  document.querySelector("#imagen3");
+let img4 =  document.querySelector("#imagen4");
+
+
+document.addEventListener('scroll', function () {
+  if (window.scrollY < 4200) {
+    img1.style.opacity = 0;
+    img2.style.opacity = 0;
+    img3.style.opacity = 0;
+    img4.style.opacity = 0;
+   
+}
+else if (window.scrollY > 4200 && window.scrollY < 4500) {
+    img1.style.opacity = 1;
+   
+    img2.style.opacity = 0;
+    
+}
+else if (window.scrollY > 4700 && window.scrollY < 5100) {
+    img1.style.opacity = 0;
+   
+    img2.style.opacity = 1;
+    
+    img3.style.opacity = 0;
+    
+}
+else if (window.scrollY > 5100 && window.scrollY < 5500) {
+    img2.style.opacity = 0;
+    
+    img3.style.opacity = 1;
+    
+    img4.style.opacity = 0;
+   
+}
+else if (window.scrollY > 5500 && window.scrollY < 5700) {
+    img3.style.opacity = 0;
+    
+    img4.style.opacity = 1;
+  
+} 
+else {
+  img1.style.opacity = 0;
+  img2.style.opacity = 0;
+  img3.style.opacity = 0;
+  img4.style.opacity = 0;
+   
+ }
+});
+
+
+/* ESTO ES PARA QUE VAYAN APARECIENDO LOS PARRAFOS */
+document.addEventListener('scroll', function () {
+  var parrafos = document.querySelectorAll('.textoCambiante');
+  parrafos.forEach(function (parrafo, index) {
+      var bounding = parrafo.getBoundingClientRect();
+      if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+          parrafo.classList.add('parrafo-visible');
+          parrafo.classList.remove('parrafo-oculto');
+      } else {
+          parrafo.classList.add('parrafo-oculto');
+          parrafo.classList.remove('parrafo-visible');
+      }
+  });
+});

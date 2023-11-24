@@ -639,7 +639,20 @@ margin-bottom: 200px;
 
 .seccion-imagenes-con-texto {
     display: flex;
+    justify-content: space-between;
     padding-top: 00px;
+}
+
+.seccion-img{
+    width: 550px;
+}
+
+.parrafos{
+    width: 467px;
+}
+
+.textoCambiante h3{
+    padding-bottom: 20px;
 }
 
 .seccion-img img{
@@ -647,11 +660,31 @@ margin-bottom: 200px;
     padding-bottom: 50px;
 }
 
-.textoCambiante p{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.imagen-fija{
+    position: fixed; /*Queda fija la imagen!!*/
+    top: 150px;
+    transition: opacity 0.5s ease;
+    width: 550px;
+    opacity: 0;
+}
+.imagen-fija img{
+    width: 100%;
 }
 
+.textoCambiante h3{
+    padding-top: 20px;
+}
+
+.parrafo-oculto {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.parrafo-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 /*titulo mas amigos, mas diversion*/
