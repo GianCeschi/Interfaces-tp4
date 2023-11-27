@@ -204,7 +204,7 @@ header {
     position: absolute;
     /*PARA COLOCARLO ARRIBA DE LAS NUBES*/
     top: 100px;
-    left: 35%;
+    left: 32%;
 }
 
 #logo.pequeño {
@@ -443,7 +443,6 @@ header {
     position: relative;
     top:-770px;
     left: 50px;
-    width: 20px;
     transition: transform 0.5s ease; /* Se ajusta la duración de la transición aquí */
 }
 
@@ -455,8 +454,7 @@ header {
 .ruta2 {
     position: relative;
     top: -1070px;
-    left: 40px;
-    width: 5px;
+    left: 40px;  
     transition: transform 0.5s ease  0.1s; /* Se agrega un retraso de 0.1s */
 }
 
@@ -469,7 +467,7 @@ header {
     position: relative;
     top: -1420px;
     left: 70px;
-    width: 5px;
+    
     transition: transform 0.5s ease  0.2s; /* Se agrega un retraso de 0.2s */
 }
 .ruta3:hover{
@@ -481,7 +479,7 @@ header {
 .fondoContenedorVengadores {
     background-color: black;
     margin-top:-1800px ;  
-    height: 1000px;
+    height: 950px;
     
     /*TENGO QUE DARLE LA CURVA ABAJO*/ 
 }
@@ -534,7 +532,7 @@ header {
 
 .mujerElastica{
     position: absolute;
-    top: -530px;
+    top: -460px;
     left: 130px;
     z-index: 6;
 }
@@ -542,14 +540,14 @@ header {
 .pumaNegro{
     position: absolute;
     z-index: 6;
-    top: -684px;
+    top: -614px;
     left: 550px;
 }
 
 .hulk{
     position: absolute;
     z-index: 6;
-    top: -327px;
+    top: -255px;
     left: 775px;
 }
 
@@ -559,7 +557,19 @@ margin-bottom: 200px;
 
 
 .tituloSeccionImgConTexto{
-    padding-top: 100px;
+    padding-top: 200px;
+}
+
+.separador1{
+    position: relative;
+    top: -1240px;
+    left: 0px;
+    width: 1280px;
+    height: 150px;
+    background: #000000;
+    z-index: 0;
+    transform: skewY(5deg);
+    transform-origin: top right;
 }
 
 .separador2{
@@ -928,3 +938,61 @@ margin-bottom: 200px;
     padding-top: 38px;
 
 }
+
+/* --------------seccion spritesheet-------------*/
+
+/*PARA QUE NO QUEDE UN ESPACIO EN BLANCO ENTRE EDIFICIOS Y FOOTER*/
+  .sectionSprite{
+    height: 0px;
+  }
+  
+  .abs {
+    position: relative;
+    bottom: -714px;
+  }
+  
+  #sp_1 {
+    z-index: 8;
+    transform: scale(1.5);
+    position: relative;
+    bottom: 230px;
+    left: 572px;
+    width: 40px;
+    height: 65px;
+    background-image: url("../img/spideySprit.png ");
+    background-repeat: repeat-x;
+    animation: climb 2.5s steps(7) infinite;
+    -webkit-animation: climb 2.5s steps(7) infinite;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+ 
+  
+  @keyframes climb {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: -280px;
+    }
+  }
+  
+  
+  @keyframes climb {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: -280px;
+    }
+  }
+  
+  
+  .sectionSprite .width-1080 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
